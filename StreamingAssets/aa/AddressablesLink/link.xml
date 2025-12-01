@@ -1,0 +1,354 @@
+<linker>
+  <assembly fullname="Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+    <type fullname="AutoAssignCamera" preserve="all" />
+    <type fullname="BookCurlPro.AutoFlip" preserve="all" />
+    <type fullname="BookCurlPro.BookPro" preserve="all" />
+    <type fullname="BookCurlPro.Examples.AddPagesDynamically" preserve="all" />
+    <type fullname="Braverse.Audio.InGameSFXPlayer" preserve="all" />
+    <type fullname="Braverse.Audio.InMenuSFXPlayer" preserve="all" />
+    <type fullname="Braverse.Core.Data.Cookies.CookieDataAsset" preserve="all" />
+    <type fullname="Braverse.Shared.AddressableManager" preserve="all" />
+    <type fullname="Braverse.Shared.Localization.LocalizationManager" preserve="all" />
+    <type fullname="Braverse.Timeline.ActionRestriction.ActionRestrictionClip" preserve="all" />
+    <type fullname="Braverse.Timeline.ActionRestriction.ActionRestrictionTrack" preserve="all" />
+    <type fullname="Braverse.Timeline.AIControl.AIAttackMarker" preserve="all" />
+    <type fullname="Braverse.Timeline.AIControl.AICookiePlayMarker" preserve="all" />
+    <type fullname="Braverse.Timeline.AIControl.AIEndPhaseMarker" preserve="all" />
+    <type fullname="Braverse.Timeline.AIControl.AIGoFirstSecondMarker" preserve="all" />
+    <type fullname="Braverse.Timeline.AIControl.AIManaPlayMarker" preserve="all" />
+    <type fullname="Braverse.Timeline.AIControl.AISkillMarker" preserve="all" />
+    <type fullname="Braverse.Timeline.AttackControl.AttackMarker" preserve="all" />
+    <type fullname="Braverse.Timeline.AttackControl.FlipMarker" preserve="all" />
+    <type fullname="Braverse.Timeline.ClickControl.ClickTargetMarker" preserve="all" />
+    <type fullname="Braverse.Timeline.ComicCanvasControl.ComicCanvasMarker" preserve="all" />
+    <type fullname="Braverse.Timeline.ComicDialogue.ComicClip" preserve="all" />
+    <type fullname="Braverse.Timeline.ComicDialogue.ComicTrack" preserve="all" />
+    <type fullname="Braverse.Timeline.GameObjectControl.GameObjectControlMarker" preserve="all" />
+    <type fullname="Braverse.Timeline.GameOverControl.GameOverMarker" preserve="all" />
+    <type fullname="Braverse.Timeline.GameStartControl.GameStartMarker" preserve="all" />
+    <type fullname="Braverse.Timeline.Hint.HintClip" preserve="all" />
+    <type fullname="Braverse.Timeline.Hint.HintTrack" preserve="all" />
+    <type fullname="Braverse.Timeline.ManaControl.ManaMarker" preserve="all" />
+    <type fullname="Braverse.Timeline.PauseControl.PauseControlClip" preserve="all" />
+    <type fullname="Braverse.Timeline.PauseControl.PauseControlTrack" preserve="all" />
+    <type fullname="Braverse.Timeline.PlayCardControl.PlayCardRequestMarker" preserve="all" />
+    <type fullname="Braverse.Timeline.Time.DelaySecMarker" preserve="all" />
+    <type fullname="Braverse.Timeline.Time.PhaseMarker" preserve="all" />
+    <type fullname="Braverse.Timeline.TimelinePlayer" preserve="all" />
+    <type fullname="Braverse.Timeline.TwoOptionControl.WaitForTwoOptionMarker" preserve="all" />
+    <type fullname="Braverse.Timeline.WaitControl.WaitUntilMarker" preserve="all" />
+    <type fullname="Braverse.UI.CharacterDialogue.ComicDialogueController" preserve="all" />
+    <type fullname="Braverse.UI.CustomButton" preserve="all" />
+    <type fullname="Braverse.UI.Hint.HintUIDisplay" preserve="all" />
+    <type fullname="Braverse.WebGL.AI.AIModel" preserve="all" />
+    <type fullname="Braverse.WebGL.AI.AIPlayerController" preserve="all" />
+    <type fullname="Braverse.WebGL.AI.Configs.AIConfigAttackDecision" preserve="all" />
+    <type fullname="Braverse.WebGL.AI.Configs.AIConfigDefensePhase" preserve="all" />
+    <type fullname="Braverse.WebGL.AI.Configs.AIConfigDeploySecondCookie" preserve="all" />
+    <type fullname="Braverse.WebGL.AI.Configs.AIConfigDeployWhenZero" preserve="all" />
+    <type fullname="Braverse.WebGL.AI.Configs.AIConfigFlipEffect" preserve="all" />
+    <type fullname="Braverse.WebGL.AI.Configs.AIConfigMainPhase" preserve="all" />
+    <type fullname="Braverse.WebGL.AI.Configs.AIConfigMulliganPhase" preserve="all" />
+    <type fullname="Braverse.WebGL.AI.Configs.AIConfigResetPhase" preserve="all" />
+    <type fullname="Braverse.WebGL.AI.Configs.AIConfigSupportPhase" preserve="all" />
+    <type fullname="Braverse.WebGL.Cards.BattleAreaController" preserve="all" />
+    <type fullname="Braverse.WebGL.Cards.BreakAreaController" preserve="all" />
+    <type fullname="Braverse.WebGL.Cards.CardDataAsset" preserve="all" />
+    <type fullname="Braverse.WebGL.Cards.CardFactory" preserve="all" />
+    <type fullname="Braverse.WebGL.Cards.CardInputHandler" preserve="all" />
+    <type fullname="Braverse.WebGL.Cards.CardLibraryUI" preserve="all" />
+    <type fullname="Braverse.WebGL.Cards.CardMover" preserve="all" />
+    <type fullname="Braverse.WebGL.Cards.CardView" preserve="all" />
+    <type fullname="Braverse.WebGL.Cards.CardVisualManager" preserve="all" />
+    <type fullname="Braverse.WebGL.Cards.DeckAreaController" preserve="all" />
+    <type fullname="Braverse.WebGL.Cards.DeckAsset" preserve="all" />
+    <type fullname="Braverse.WebGL.Cards.DiscardAreaController" preserve="all" />
+    <type fullname="Braverse.WebGL.Cards.DrawLineRenderer" preserve="all" />
+    <type fullname="Braverse.WebGL.Cards.HandAreaController" preserve="all" />
+    <type fullname="Braverse.WebGL.Cards.ManaInfo" preserve="all" />
+    <type fullname="Braverse.WebGL.Cards.SpellAreaController" preserve="all" />
+    <type fullname="Braverse.WebGL.Cards.StageAreaController" preserve="all" />
+    <type fullname="Braverse.WebGL.Cards.SupportAreaController" preserve="all" />
+    <type fullname="Braverse.WebGL.Examples.EndGameManager" preserve="all" />
+    <type fullname="Braverse.WebGL.Examples.LevelProgressExample" preserve="all" />
+    <type fullname="Braverse.WebGL.GameLogic.CardInteractionController" preserve="all" />
+    <type fullname="Braverse.WebGL.GameLogic.GameConfig" preserve="all" />
+    <type fullname="Braverse.WebGL.GameLogic.GameConfigManager" preserve="all" />
+    <type fullname="Braverse.WebGL.GameLogic.GameInitializer" preserve="all" />
+    <type fullname="Braverse.WebGL.GameLogic.GameManager" preserve="all" />
+    <type fullname="Braverse.WebGL.GameLogic.GameStarts.GameStarter" preserve="all" />
+    <type fullname="Braverse.WebGL.GameLogic.PhaseControls.PhaseDisplayUI" preserve="all" />
+    <type fullname="Braverse.WebGL.GameLogic.PhaseControls.PhaseIcon" preserve="all" />
+    <type fullname="Braverse.WebGL.GameLogic.PhaseControls.TurnManager" preserve="all" />
+    <type fullname="Braverse.WebGL.GameLogic.RPS.RPSController" preserve="all" />
+    <type fullname="Braverse.WebGL.GameLogic.RPS.RPSUI" preserve="all" />
+    <type fullname="Braverse.WebGL.GameOpening.GameOpeningController" preserve="all" />
+    <type fullname="Braverse.WebGL.Menu.LevelButton" preserve="all" />
+    <type fullname="Braverse.WebGL.Menu.LevelEndingController" preserve="all" />
+    <type fullname="Braverse.WebGL.Menu.LevelOpeningController" preserve="all" />
+    <type fullname="Braverse.WebGL.Menu.MenuController" preserve="all" />
+    <type fullname="Braverse.WebGL.Menu.PVEButton" preserve="all" />
+    <type fullname="Braverse.WebGL.Scenes.BookFlipEffect" preserve="all" />
+    <type fullname="Braverse.WebGL.Scenes.BundleLoader" preserve="all" />
+    <type fullname="Braverse.WebGL.Scenes.SceneLoader" preserve="all" />
+    <type fullname="Braverse.WebGL.Skills.AdjustAttackNode" preserve="all" />
+    <type fullname="Braverse.WebGL.Skills.AttackNode" preserve="all" />
+    <type fullname="Braverse.WebGL.Skills.CookieConditionNode" preserve="all" />
+    <type fullname="Braverse.WebGL.Skills.Core.BreakLifeNode" preserve="all" />
+    <type fullname="Braverse.WebGL.Skills.Core.ConditionNode" preserve="all" />
+    <type fullname="Braverse.WebGL.Skills.Core.FlipNode" preserve="all" />
+    <type fullname="Braverse.WebGL.Skills.Core.HandConditionNode" preserve="all" />
+    <type fullname="Braverse.WebGL.Skills.Core.ManaNode" preserve="all" />
+    <type fullname="Braverse.WebGL.Skills.DamageNode" preserve="all" />
+    <type fullname="Braverse.WebGL.Skills.DetectTagsNode" preserve="all" />
+    <type fullname="Braverse.WebGL.Skills.DiscardHandCardNode" preserve="all" />
+    <type fullname="Braverse.WebGL.Skills.DrawAsManyCardsNode" preserve="all" />
+    <type fullname="Braverse.WebGL.Skills.DrawAsOpponentNode" preserve="all" />
+    <type fullname="Braverse.WebGL.Skills.DrawCardsNode" preserve="all" />
+    <type fullname="Braverse.WebGL.Skills.FlipHealNode" preserve="all" />
+    <type fullname="Braverse.WebGL.Skills.NotifyNode" preserve="all" />
+    <type fullname="Braverse.WebGL.Skills.RemoveLifeCardNode" preserve="all" />
+    <type fullname="Braverse.WebGL.Skills.RestNode" preserve="all" />
+    <type fullname="Braverse.WebGL.Skills.ReturnLifeCardToHandNode" preserve="all" />
+    <type fullname="Braverse.WebGL.Skills.SelectCardsNode" preserve="all" />
+    <type fullname="Braverse.WebGL.Skills.SelectOneEffectNode" preserve="all" />
+    <type fullname="Braverse.WebGL.Skills.SelectSelfNode" preserve="all" />
+    <type fullname="Braverse.WebGL.Skills.SelfConditionNode" preserve="all" />
+    <type fullname="Braverse.WebGL.Skills.SkillGraph" preserve="all" />
+    <type fullname="Braverse.WebGL.Skills.ThenNode" preserve="all" />
+    <type fullname="Braverse.WebGL.Skills.TriggerNode" preserve="all" />
+    <type fullname="Braverse.WebGL.Skills.ViewCardsNode" preserve="all" />
+    <type fullname="Braverse.WebGL.Systems.LevelProgress.LevelProgressManager" preserve="all" />
+    <type fullname="Braverse.WebGL.UI.CardPreview" preserve="all" />
+    <type fullname="Braverse.WebGL.UI.Cards.ViewCardUI" preserve="all" />
+    <type fullname="Braverse.WebGL.UI.CursorHint" preserve="all" />
+    <type fullname="Braverse.WebGL.UI.Performances.GameStartPerformance" preserve="all" />
+    <type fullname="Braverse.WebGL.UI.TextDotsAnimation" preserve="all" />
+    <type fullname="Braverse.WebGL.UI.TwoOptions.TwoOptionUI" preserve="all" />
+    <type fullname="Braverse.WebGL.Utilities.GlobalGameManager" preserve="all" />
+    <type fullname="Braverse.WebGL.Utilities.Settings" preserve="all" />
+    <type fullname="Braverse.WebGL.VisualEffects.EffectController" preserve="all" />
+    <type fullname="Braverse.WebGL.VisualEffects.ScreenShakeController" preserve="all" />
+    <type fullname="Braverse.Timeline.ComicDialogue.ComicSettings" preserve="nothing" serialized="true" />
+    <type fullname="Braverse.Timeline.PauseControl.PauseSettings" preserve="nothing" serialized="true" />
+    <type fullname="Braverse.WebGL.GameLogic.BattleAreaDatas" preserve="nothing" serialized="true" />
+    <type fullname="BookCurlPro.Paper" preserve="nothing" serialized="true" />
+    <type fullname="Braverse.Core.Data.Cookies.CookieDataAsset/CookieEntry" preserve="nothing" serialized="true" />
+    <type fullname="Braverse.Core.Data.Cookies.CookieDataAsset/RPSSpriteMapping" preserve="nothing" serialized="true" />
+    <type fullname="Braverse.Core.Data.Cookies.CookieDataAsset/StatusSpriteMapping" preserve="nothing" serialized="true" />
+    <type fullname="Braverse.Timeline.AIControl.NodeParameterEntry" preserve="nothing" serialized="true" />
+    <type fullname="Braverse.UI.CharacterDialogue.CharacterData" preserve="nothing" serialized="true" />
+    <type fullname="Braverse.UI.CharacterDialogue.ComicDialogueData" preserve="nothing" serialized="true" />
+    <type fullname="Braverse.WebGL.Cards.UIManaGroup" preserve="nothing" serialized="true" />
+    <type fullname="Braverse.WebGL.GameLogic.RPS.RPSAnimationSettings" preserve="nothing" serialized="true" />
+    <type fullname="Braverse.WebGL.GameLogic.RPS.RPSConfig" preserve="nothing" serialized="true" />
+    <type fullname="Braverse.WebGL.AI.AIPersonality" preserve="nothing" serialized="true" />
+    <type fullname="Braverse.WebGL.AI.Configs.DeployFallback" preserve="nothing" serialized="true" />
+    <type fullname="Braverse.WebGL.AI.Configs.DeployZeroRule" preserve="nothing" serialized="true" />
+    <type fullname="Braverse.WebGL.AI.Configs.LvDeployRule" preserve="nothing" serialized="true" />
+    <type fullname="Braverse.WebGL.Skills.Core.CompareType" preserve="nothing" serialized="true" />
+    <type fullname="Braverse.WebGL.Skills.Core.CookieCompare" preserve="nothing" serialized="true" />
+    <type fullname="Braverse.WebGL.Skills.Core.CookieCondition" preserve="nothing" serialized="true" />
+    <type fullname="Braverse.WebGL.Skills.Core.SkillManaCompare" preserve="nothing" serialized="true" />
+    <type fullname="Braverse.WebGL.Skills.Core.SkillManaCondition" preserve="nothing" serialized="true" />
+    <type fullname="Braverse.WebGL.Skills.Core.TargetType" preserve="nothing" serialized="true" />
+    <type fullname="Braverse.WebGL.Skills.DeckPosition" preserve="nothing" serialized="true" />
+    <type fullname="Braverse.WebGL.Skills.DetectSoulJamTagsCondition" preserve="nothing" serialized="true" />
+  </assembly>
+  <assembly fullname="Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+    <type fullname="AudioManager" preserve="all" />
+    <type fullname="AudioSystem.ClipAssetGroup" preserve="all" />
+    <type fullname="AudioSystem.ClipAssetLibrary" preserve="all" />
+    <type fullname="CameraFit" preserve="all" />
+    <type fullname="UIOutline" preserve="all" />
+    <type fullname="UnityEngine.UI.ReverseMask" preserve="all" />
+    <type fullname="UnityEngine.UI.ReverseMaskLayer" preserve="all" />
+    <type fullname="UtilityPack.AnimationConfigManager" preserve="all" />
+    <type fullname="UtilityPack.Configs.AnimationPresetConfig" preserve="all" />
+    <type fullname="UtilityPack.Configs.BreakAreaAnimationConfig" preserve="all" />
+    <type fullname="UtilityPack.Configs.ButtonAnimationConfig" preserve="all" />
+    <type fullname="UtilityPack.Configs.CardAttackAnimationConfig" preserve="all" />
+    <type fullname="UtilityPack.Configs.CardMovementConfig" preserve="all" />
+    <type fullname="UtilityPack.Configs.ControllerSortingAnimationConfig" preserve="all" />
+    <type fullname="UtilityPack.Configs.FadeAnimationConfig" preserve="all" />
+    <type fullname="UtilityPack.Configs.GameStartPerformanceConfig" preserve="all" />
+    <type fullname="UtilityPack.Configs.MenuIntroAnimationConfig" preserve="all" />
+    <type fullname="UtilityPack.Configs.PhaseScaleAnimationConfig" preserve="all" />
+    <type fullname="UtilityPack.Configs.RPSAnimationConfig" preserve="all" />
+    <type fullname="UtilityPack.Configs.ScaleAnimationConfig" preserve="all" />
+    <type fullname="UtilityPack.Configs.TextAnimationConfig" preserve="all" />
+    <type fullname="AudioSystem.ClipAsset" preserve="nothing" serialized="true" />
+    <type fullname="UtilityPack.Configs.AnimationPreset" preserve="nothing" serialized="true" />
+  </assembly>
+  <assembly fullname="Unity.Addressables, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null" preserve="all">
+    <type fullname="UnityEngine.AddressableAssets.Addressables" preserve="all" />
+  </assembly>
+  <assembly fullname="Unity.InputSystem, Version=1.14.2.0, Culture=neutral, PublicKeyToken=null">
+    <type fullname="UnityEngine.InputSystem.InputActionAsset" preserve="all" />
+    <type fullname="UnityEngine.InputSystem.InputActionReference" preserve="all" />
+    <type fullname="UnityEngine.InputSystem.UI.InputSystemUIInputModule" preserve="all" />
+    <type fullname="UnityEngine.InputSystem.InputAction" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.InputSystem.InputActionMap" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.InputSystem.InputBinding" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.InputSystem.InputControlScheme" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.InputSystem.InputControlScheme/DeviceRequirement" preserve="nothing" serialized="true" />
+  </assembly>
+  <assembly fullname="Unity.Localization, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+    <type fullname="UnityEngine.Localization.Components.LocalizeStringEvent" preserve="all" />
+    <type fullname="UnityEngine.Localization.Locale" preserve="all" />
+    <type fullname="UnityEngine.Localization.PropertyVariants.GameObjectLocalizer" preserve="all" />
+    <type fullname="UnityEngine.Localization.Tables.AssetTable" preserve="all" />
+    <type fullname="UnityEngine.Localization.Tables.SharedTableData" preserve="all" />
+    <type fullname="UnityEngine.Localization.Tables.StringTable" preserve="all" />
+    <type fullname="UnityEngine.Localization.LocalizedSprite" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.Localization.LocalizedString" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.Localization.PropertyVariants.TrackedObjects.TrackedUGuiGraphic" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.Localization.PropertyVariants.TrackedProperties.LocalizedAssetProperty" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.Localization.Tables.TableEntryReference" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.Localization.Tables.TableReference" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.Localization.LocaleIdentifier" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.Localization.Metadata.MetadataCollection" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.Localization.Tables.TableEntryData" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.Localization.LocalizedMaterial" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.Localization.LocalizedTmpFont" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.Localization.Events.UnityEventString" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.Localization.Metadata.AssetTypeMetadata" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.Localization.Tables.DistributedUIDGenerator" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.Localization.Tables.SharedTableData/SharedTableEntry" preserve="nothing" serialized="true" />
+  </assembly>
+  <assembly fullname="Unity.RenderPipelines.Universal.Runtime, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+    <type fullname="UnityEngine.Rendering.Universal.UniversalAdditionalCameraData" preserve="all" />
+    <type fullname="UnityEngine.Rendering.Universal.UniversalAdditionalLightData" preserve="all" />
+    <type fullname="UnityEngine.Rendering.Universal.TemporalAA/Settings" preserve="nothing" serialized="true" />
+  </assembly>
+  <assembly fullname="Unity.ResourceManager, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null" preserve="all">
+    <type fullname="UnityEngine.ResourceManagement.ResourceProviders.AssetBundleProvider" preserve="all" />
+    <type fullname="UnityEngine.ResourceManagement.ResourceProviders.AtlasSpriteProvider" preserve="all" />
+    <type fullname="UnityEngine.ResourceManagement.ResourceProviders.BundledAssetProvider" preserve="all" />
+    <type fullname="UnityEngine.ResourceManagement.ResourceProviders.InstanceProvider" preserve="all" />
+    <type fullname="UnityEngine.ResourceManagement.ResourceProviders.SceneProvider" preserve="all" />
+  </assembly>
+  <assembly fullname="Unity.TextMeshPro, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+    <type fullname="TMPro.TextMeshProUGUI" preserve="all" />
+    <type fullname="TMPro.TMP_FontAsset" preserve="all" />
+    <type fullname="TMPro.TMP_SpriteAsset" preserve="all" />
+    <type fullname="TMPro.VertexGradient" preserve="nothing" serialized="true" />
+    <type fullname="TMPro.FaceInfo_Legacy" preserve="nothing" serialized="true" />
+    <type fullname="TMPro.FontAssetCreationSettings" preserve="nothing" serialized="true" />
+    <type fullname="TMPro.KerningTable" preserve="nothing" serialized="true" />
+    <type fullname="TMPro.TMP_Character" preserve="nothing" serialized="true" />
+    <type fullname="TMPro.TMP_FontFeatureTable" preserve="nothing" serialized="true" />
+    <type fullname="TMPro.TMP_FontWeightPair" preserve="nothing" serialized="true" />
+    <type fullname="TMPro.TMP_SpriteCharacter" preserve="nothing" serialized="true" />
+    <type fullname="TMPro.TMP_SpriteGlyph" preserve="nothing" serialized="true" />
+  </assembly>
+  <assembly fullname="Unity.Timeline, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+    <type fullname="UnityEngine.Timeline.ActivationPlayableAsset" preserve="all" />
+    <type fullname="UnityEngine.Timeline.ActivationTrack" preserve="all" />
+    <type fullname="UnityEngine.Timeline.AnimationPlayableAsset" preserve="all" />
+    <type fullname="UnityEngine.Timeline.AnimationTrack" preserve="all" />
+    <type fullname="UnityEngine.Timeline.ControlPlayableAsset" preserve="all" />
+    <type fullname="UnityEngine.Timeline.ControlTrack" preserve="all" />
+    <type fullname="UnityEngine.Timeline.MarkerTrack" preserve="all" />
+    <type fullname="UnityEngine.Timeline.SignalEmitter" preserve="all" />
+    <type fullname="UnityEngine.Timeline.TimelineAsset" preserve="all" />
+    <type fullname="UnityEngine.Timeline.MarkerList" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.Timeline.TimelineAsset/EditorSettings" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.Timeline.TimelineClip" preserve="nothing" serialized="true" />
+  </assembly>
+  <assembly fullname="UnityEngine.AnimationModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+    <type fullname="UnityEngine.AnimationClip" preserve="all" />
+    <type fullname="UnityEngine.Animator" preserve="all" />
+    <type fullname="UnityEngine.RuntimeAnimatorController" preserve="all" />
+  </assembly>
+  <assembly fullname="UnityEngine.AudioModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+    <type fullname="UnityEngine.AudioClip" preserve="all" />
+    <type fullname="UnityEngine.AudioListener" preserve="all" />
+    <type fullname="UnityEngine.AudioSource" preserve="all" />
+  </assembly>
+  <assembly fullname="UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+    <type fullname="UnityEngine.Camera" preserve="all" />
+    <type fullname="UnityEngine.Cubemap" preserve="all" />
+    <type fullname="UnityEngine.FlareLayer" preserve="all" />
+    <type fullname="UnityEngine.GameObject" preserve="all" />
+    <type fullname="UnityEngine.Light" preserve="all" />
+    <type fullname="UnityEngine.LightmapSettings" preserve="all" />
+    <type fullname="UnityEngine.LineRenderer" preserve="all" />
+    <type fullname="UnityEngine.Material" preserve="all" />
+    <type fullname="UnityEngine.Mesh" preserve="all" />
+    <type fullname="UnityEngine.MeshFilter" preserve="all" />
+    <type fullname="UnityEngine.MeshRenderer" preserve="all" />
+    <type fullname="UnityEngine.MonoBehaviour" preserve="all" />
+    <type fullname="UnityEngine.Object" preserve="all" />
+    <type fullname="UnityEngine.RectTransform" preserve="all" />
+    <type fullname="UnityEngine.RenderSettings" preserve="all" />
+    <type fullname="UnityEngine.Shader" preserve="all" />
+    <type fullname="UnityEngine.Sprite" preserve="all" />
+    <type fullname="UnityEngine.SpriteRenderer" preserve="all" />
+    <type fullname="UnityEngine.Texture2D" preserve="all" />
+    <type fullname="UnityEngine.Transform" preserve="all" />
+    <type fullname="UnityEngine.U2D.SpriteAtlas" preserve="all" />
+    <type fullname="UnityEngine.Events.PersistentCallGroup" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.ExposedReference`1" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.Events.ArgumentCache" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.Events.PersistentListenerMode" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.Events.UnityEvent" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.RenderingLayerMask" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.RectOffset" preserve="nothing" serialized="true" />
+  </assembly>
+  <assembly fullname="UnityEngine.DirectorModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+    <type fullname="UnityEngine.Playables.PlayableDirector" preserve="all" />
+  </assembly>
+  <assembly fullname="UnityEngine.TextRenderingModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+    <type fullname="UnityEngine.Font" preserve="all" />
+  </assembly>
+  <assembly fullname="UnityEngine.UI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+    <type fullname="UnityEngine.EventSystems.EventSystem" preserve="all" />
+    <type fullname="UnityEngine.EventSystems.EventTrigger" preserve="all" />
+    <type fullname="UnityEngine.UI.AspectRatioFitter" preserve="all" />
+    <type fullname="UnityEngine.UI.Button" preserve="all" />
+    <type fullname="UnityEngine.UI.CanvasScaler" preserve="all" />
+    <type fullname="UnityEngine.UI.ContentSizeFitter" preserve="all" />
+    <type fullname="UnityEngine.UI.GraphicRaycaster" preserve="all" />
+    <type fullname="UnityEngine.UI.GridLayoutGroup" preserve="all" />
+    <type fullname="UnityEngine.UI.HorizontalLayoutGroup" preserve="all" />
+    <type fullname="UnityEngine.UI.Image" preserve="all" />
+    <type fullname="UnityEngine.UI.Mask" preserve="all" />
+    <type fullname="UnityEngine.UI.Scrollbar" preserve="all" />
+    <type fullname="UnityEngine.UI.ScrollRect" preserve="all" />
+    <type fullname="UnityEngine.UI.Slider" preserve="all" />
+    <type fullname="UnityEngine.UI.Text" preserve="all" />
+    <type fullname="UnityEngine.UI.VerticalLayoutGroup" preserve="all" />
+    <type fullname="UnityEngine.UI.MaskableGraphic/CullStateChangedEvent" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.UI.AnimationTriggers" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.UI.Button/ButtonClickedEvent" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.UI.ColorBlock" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.UI.FontData" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.UI.Navigation" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.UI.SpriteState" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.EventSystems.EventTrigger/Entry" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.EventSystems.EventTrigger/TriggerEvent" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.UI.Slider/SliderEvent" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.UI.ScrollRect/ScrollRectEvent" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.UI.Scrollbar/ScrollEvent" preserve="nothing" serialized="true" />
+  </assembly>
+  <assembly fullname="UnityEngine.UIModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+    <type fullname="UnityEngine.Canvas" preserve="all" />
+    <type fullname="UnityEngine.CanvasGroup" preserve="all" />
+    <type fullname="UnityEngine.CanvasRenderer" preserve="all" />
+  </assembly>
+  <assembly fullname="UnityEngine.TextCoreFontEngineModule">
+    <type fullname="UnityEngine.TextCore.FaceInfo" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.TextCore.Glyph" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.TextCore.GlyphMetrics" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.TextCore.GlyphRect" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.TextCore.LowLevel.GlyphAdjustmentRecord" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.TextCore.LowLevel.GlyphPairAdjustmentRecord" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.TextCore.LowLevel.GlyphValueRecord" preserve="nothing" serialized="true" />
+  </assembly>
+  <assembly fullname="XNode">
+    <type fullname="XNode.Node/NodePortDictionary" preserve="nothing" serialized="true" />
+    <type fullname="XNode.NodePort" preserve="nothing" serialized="true" />
+    <type fullname="XNode.NodePort/PortConnection" preserve="nothing" serialized="true" />
+  </assembly>
+</linker>

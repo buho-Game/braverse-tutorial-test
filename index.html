@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>CookieRun: Braverse Trading Card Game</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="Build/favicon.ico">
+  
+  <!-- Resource Hints for Faster Loading -->
+  <!-- <link rel="preconnect" href="https://www.gstatic.com" crossorigin> -->
+  <!-- <link rel="dns-prefetch" href="https://www.gstatic.com"> -->
+  <link rel="preload" href="Build/index.loader.js" as="script">
+  <link rel="preload" href="Build/LoadingBackground.png" as="image">
+  <link rel="preload" href="Build/UI_settings_897.png" as="image">
+  <link rel="preload" href="Build/UI_settings_898.png" as="image">
+  
+  <!-- Firebase SDK - Loaded asynchronously with defer -->
+  <!-- <script defer src="https://www.gstatic.com/firebasejs/10.8.0/firebase-app-compat.js"></script> -->
+  <!-- <script defer src="https://www.gstatic.com/firebasejs/10.8.0/firebase-auth-compat.js"></script> -->
+  <!-- <script defer src="https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore-compat.js"></script> -->
+  <!-- <script defer src="https://www.gstatic.com/firebasejs/10.8.0/firebase-storage-compat.js"></script> -->
+  <!-- <script defer src="https://www.gstatic.com/firebasejs/10.8.0/firebase-analytics-compat.js"></script> -->
+
+  <script>
+    // Firebase configuration object
+    /*
+    const firebaseConfig = {
+      apiKey: "AIzaSyDgHJSu7kL8rUOPI-Fev3YvL6JdzyV2ZQA",
+      authDomain: "braverse-tutorial-86219.firebaseapp.com",
+      projectId: "braverse-tutorial-86219",
+      storageBucket: "braverse-tutorial-86219.firebasestorage.app",
+      messagingSenderId: "19091368521",
+      appId: "1:19091368521:web:1df0837d66e1b5372e6d98",
+      measurementId: "G-CGJJGT09ZL"
+    };
+
+    // Firebase initialization function - called after Firebase SDKs load
+    function initializeFirebase() {
+      if (typeof firebase === 'undefined') {
+        console.warn('Firebase SDK not loaded yet');
+        return false;
+      }
+
+      try {
+        firebase.initializeApp(firebaseConfig);
+        window.firebaseAuth = firebase.auth();
+        window.firebaseFirestore = firebase.firestore();
+        window.firebaseStorage = firebase.storage();
+        window.firebaseAnalytics = firebase.analytics();
+        
+        // Store Firebase instances globally for backward compatibility
+        auth = window.firebaseAuth;
+        firestore = window.firebaseFirestore;
+        storage = window.firebaseStorage;
+        analytics = window.firebaseAnalytics;
+        
+        return true;
+      } catch (error) {
+        console.error('Firebase initialization failed:', error);
+        return false;
+      }
+    }
+
+    // Store Firebase instances globally for backward compatibility
+    var auth, firestore, storage, analytics;
+    */
+
+    // Function to send message to Unity
+    function sendMessageToUnity(objectName, methodName, parameter) {
+      if (window.unityInstance) {
+        window.unityInstance.SendMessage(objectName, methodName, parameter);
+      } else {
+        console.warn('Unity instance not ready');
+      }
+    }
+
+    // Setup Firebase Auth state listener (called after Unity and Firebase are ready)
+    /*
+    function setupFirebaseAuthListener() {
+      if (window.firebaseAuth) {
+        window.firebaseAuth.onAuthStateChanged(function(user) {
+          if (user) {
+            const userData = {
+              uid: user.uid,
+              email: user.email,
+              displayName: user.displayName
+            };
+            sendMessageToUnity('FirebaseManager', 'OnAuthStateChanged', JSON.stringify(userData));
+          } else {
+            sendMessageToUnity('FirebaseManager', 'OnAuthStateChanged', 'null');
+          }
+        });
+      }
+    }
+
+    // Analytics functions for Unity interop
+    function LogAnalyticsEvent(eventName, parametersJson) {
+      try {
+        // Validate inputs
+        if (!eventName || typeof eventName !== 'string') {
+          console.error('Invalid event name:', eventName);
+          return;
+        }
+
+        // Ensure Firebase Analytics is available
+        if (!firebase || !firebase.analytics) {
+          console.error('Firebase Analytics not available');
+          return;
+        }
+
+        // Parse parameters
+        let params = {};
+        if (parametersJson && parametersJson !== '{}') {
+          try {
+            params = JSON.parse(parametersJson);
+          } catch (parseError) {
+            console.error('Failed to parse parameters JSON:', parseError, parametersJson);
+            return;
+          }
+        }
+
+        // Log the event
+        firebase.analytics().logEvent(eventName, params);
+        console.log(`Analytics event logged: ${eventName}`, params);
+      } catch (error) {
+        console.error('Failed to log analytics event:', error, {
+          eventName: eventName,
+          parametersJson: parametersJson
+        });
+      }
+    }
+
+    function SetAnalyticsUserProperty(propertyName, value) {
+      try {
+        // Validate inputs
+        if (!propertyName || typeof propertyName !== 'string') {
+          console.error('Invalid property name:', propertyName);
+          return;
+        }
+
+        // Ensure Firebase Analytics is available
+        if (!firebase || !firebase.analytics) {
+          console.error('Firebase Analytics not available');
+          return;
+        }
+
+        // Set the user property
+        firebase.analytics().setUserProperties({ [propertyName]: value || '' });
+        console.log(`Analytics user property set: ${propertyName} = ${value}`);
+      } catch (error) {
+        console.error('Failed to set analytics user property:', error, {
+          propertyName: propertyName,
+          value: value
+        });
+      }
+    }
+
+    // Test Firebase Analytics availability
+    function TestFirebaseAnalytics() {
+      try {
+        if (firebase && firebase.analytics) {
+          console.log('Firebase Analytics is available');
+          return true;
+        } else {
+          console.error('Firebase Analytics is not available');
+          return false;
+        }
+      } catch (error) {
+        console.error('Error testing Firebase Analytics:', error);
+        return false;
+      }
+    }
+    */
+  </script>
+  
+  <style>
+    @font-face {
+      font-family: 'CookieRun';
+      src: url('Build/CookieRun Regular.otf') format('opentype');
+    }
+
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      width: 100%;
+      overflow: hidden;
+      background-color: #000;
+    }
+
+    #background-image {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      max-width: 100%;
+      max-height: 100%;
+      width: auto;
+      height: auto;
+      z-index: -1;
+      object-fit: contain;
+    }
+
+    #unity-container {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+    }
+
+    #loading-screen {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: #000;
+      z-index: 1000;
+    }
+
+    #logo {
+      width: 100%;
+      height: auto;
+      margin-bottom: 20px;
+      object-fit: contain;
+    }
+
+
+    /* Loading Bar Styles */
+    #loading-bar-container {
+      position: fixed;
+      bottom: 30px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 80%;
+      max-width: 600px;
+      z-index: 1001;
+    }
+
+    #loading-bar-bg {
+      width: 100%;
+      height: auto;
+      display: block;
+      object-fit: contain;
+    }
+
+    #loading-bar-fill {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: auto;
+      display: block;
+      object-fit: contain;
+      transition: clip-path 0.3s ease-out;
+      clip-path: inset(0 100% 0 0);
+    }
+
+
+    canvas {
+      width: 100% !important;
+      height: 100% !important;
+      display: block;
+    }
+  </style>
+  <script>
+    // Clear browser caches before Unity loads
+    (function clearBrowserCaches() {
+      try {
+        // Clear IndexedDB (Addressables cache storage)
+        if ('indexedDB' in window) {
+          indexedDB.databases().then(function(databases) {
+            databases.forEach(function(db) {
+              // Clear Unity/Addressables related databases
+              if (db.name && (db.name.includes('Unity') || db.name.includes('Addressables') || db.name.includes('braverse'))) {
+                indexedDB.deleteDatabase(db.name).catch(function(err) {
+                  console.warn('Failed to delete IndexedDB database:', db.name, err);
+                });
+              }
+            });
+          }).catch(function(err) {
+            console.warn('Failed to enumerate IndexedDB databases:', err);
+          });
+        }
+
+        // Clear sessionStorage
+        try {
+          sessionStorage.clear();
+        } catch (e) {
+          console.warn('Failed to clear sessionStorage:', e);
+        }
+      } catch (error) {
+        console.warn('Error during cache clearing:', error);
+      }
+    })();
+
+    // Unity loader setup - starts loading immediately (non-blocking)
+    (function() {
+      var buildUrl = "Build";
+      var loaderUrl = buildUrl + "/index.loader.js";
+      var config = {
+        dataUrl: buildUrl + "/index.data.unityweb",
+        frameworkUrl: buildUrl + "/index.framework.js.unityweb",
+        codeUrl: buildUrl + "/index.wasm.unityweb",
+        streamingAssetsUrl: "StreamingAssets",
+        companyName: "buho",
+        productName: "braverse",
+        productVersion: "0.0.5",
+      };
+
+      var container, canvas, loadingScreen, loadingBarFill;
+
+      // Development mode detection
+      var isDevelopment = window.location.hostname === 'localhost' || 
+                         window.location.hostname === '127.0.0.1' || 
+                         window.location.hostname === '';
+
+      // Wait for DOM to be ready
+      function initUnityLoader() {
+        container = document.querySelector("#unity-container");
+        canvas = document.querySelector("#unity-canvas");
+        loadingScreen = document.querySelector("#loading-screen");
+        loadingBarFill = document.querySelector("#loading-bar-fill");
+
+        if (isDevelopment) {
+          console.warn("Development mode detected. Please build the WebGL project first if build files are missing.");
+        }
+
+        // Simulate initial loading progress
+        var initialProgress = 0;
+        var initialLoadingInterval = setInterval(function() {
+          initialProgress += Math.random() * 15;
+          if (initialProgress > 30) {
+            initialProgress = 30;
+            clearInterval(initialLoadingInterval);
+          }
+          
+          if (loadingBarFill) {
+            var progressPercent = Math.round(initialProgress);
+            loadingBarFill.style.clipPath = `inset(0 ${100 - progressPercent}% 0 0)`;
+          }
+        }, 200);
+
+        // Load Unity loader script
+        var script = document.createElement("script");
+        script.src = loaderUrl;
+        script.onerror = function() {
+          if (isDevelopment) {
+            console.error("Failed to load Unity loader script. Build files may be missing.");
+          } else {
+            console.error("Failed to load game resources.");
+          }
+        };
+        
+        script.onload = function() {
+          // Initialize Firebase when loader is ready (Firebase SDKs should be loaded by now)
+          /*
+          if (typeof firebase !== 'undefined') {
+            initializeFirebase();
+          } else {
+            // Wait for Firebase SDKs to load (they use defer)
+            window.addEventListener('load', function() {
+              if (typeof firebase !== 'undefined') {
+                initializeFirebase();
+              }
+            });
+          }
+          */
+
+          createUnityInstance(canvas, config, function(progress) {
+            // Update loading progress (continue from initial progress)
+            var progressPercent = Math.round(30 + (progress * 70)); // 30% initial + 70% Unity loading
+            
+            // Update loading bar
+            if (loadingBarFill) {
+              loadingBarFill.style.clipPath = `inset(0 ${100 - progressPercent}% 0 0)`;
+            }
+            
+            if (isDevelopment) {
+              console.log("Loading progress: " + progressPercent + "%");
+            }
+          }).then(function(unityInstance) {
+            // Unity loaded successfully
+            loadingScreen.style.display = "none";
+            // Store Unity instance globally
+            window.unityInstance = unityInstance;
+            
+            if (isDevelopment) {
+              console.log("Unity instance loaded successfully");
+            }
+
+            // Setup Firebase Auth state listener after Unity is ready
+            // setupFirebaseAuthListener();
+          }).catch(function(message) {
+            // Error handling
+            console.error('Unity initialization failed:', message);
+          });
+        };
+
+        document.body.appendChild(script);
+      }
+
+      // Start loading immediately if DOM is ready, otherwise wait
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', initUnityLoader);
+      } else {
+        initUnityLoader();
+      }
+    })();
+  </script>
+</head>
+<body>
+  <div id="loading-screen">
+    <img id="logo" src="Build/LoadingBackground.png" alt="braverse">
+    <div id="loading-bar-container">
+      <img id="loading-bar-bg" src="Build/UI_settings_897.png" alt="Loading Bar Background">
+      <img id="loading-bar-fill" src="Build/UI_settings_898.png" alt="Loading Bar Fill">
+    </div>
+  </div>
+  <div id="unity-container">
+    <canvas id="unity-canvas"></canvas>
+  </div>
+</body>
+</html> 
